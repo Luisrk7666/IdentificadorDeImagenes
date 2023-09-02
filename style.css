@@ -1,0 +1,12 @@
+h1{
+    font-family: 'Black Ops One', cursive;
+}
+
+.objeto{
+list-style: none;
+} 
+#camara {
+    width:350;
+     height:300;
+     border:2px dashed;
+}

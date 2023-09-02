@@ -1,0 +1,76 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+        <!---Boostrap—-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Identificacion De Imagenes</title>
+
+        <!--Reconocimiento de cámara web -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+
+<!--Integrar techable machine -->
+
+    <script src="https://teachablemachine.withgoogle.com/models/gNkvutm7s/"></script>
+
+
+<!--Libreria Ml5  -->
+
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+    <body> <div class="container">
+        <center>
+        <h1 style="text-align:center ;">
+        Figuritas Coleccionables 
+            FIFA WORLD CUP    
+        </h1>
+        
+        <p>
+            El Modelo Esta Entrenado Para Identificar Las Siguientes Figuras
+        </p>
+        <ul>
+            <li class="objeto">Figura Rafa Marquez Mundial Germany 2006</li>
+            <li class="objeto">Figura Rafa Marquez Mundial Korea Japon 2002</li>
+            <li class="objeto">Botella Mundial Russia 2018</li>
+            <li class="objeto">Figura Kaka Mundial Korea Japon 2002</li>
+            <li class="objeto">Figura Nestor Araujo Mundial Qatar 2022</li>
+            <br><br>
+        </ul>
+        <label>Vista De Camara</label> <div id="camera">
+
+        </div>
+        <br><br>
+        <div id="resultado">
+
+        </div>
+        <button class="btn btn-primary " onclick="take_snapchot()">Captura</button>
+        <button class="btn btn-primary" onclick="check_snapchot()">Identificar</button>
+        <p>
+            Objeto: 
+            <span id="nombre"></span>
+        </p>
+        <p>
+        Precisión <span id="porcentaje">
+
+        </span> 
+        </p>
+        
+    </center>
+    </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
